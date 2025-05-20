@@ -361,7 +361,6 @@ var opentelemetry = ({
           body,
           request,
           headers: parsedHeaders,
-          // @ts-expect-error
           response
         } = context;
         if (context.route) attributes["http.route"] = context.route;

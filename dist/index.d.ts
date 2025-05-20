@@ -30,29 +30,25 @@ export declare const getCurrentSpan: () => Span | undefined;
  * @returns boolean - whether the attributes are set or not
  */
 export declare const setAttributes: (attributes: Attributes) => boolean;
-export declare const opentelemetry: ({ serviceName, instrumentations, contextManager, ...options }?: ElysiaOpenTelemetryOptions) => Elysia<"", {
+export declare const opentelemetry: ({ serviceName, instrumentations, contextManager, ...options }?: ElysiaOpenTelemetryOptions) => Elysia<"", false, {
     decorator: {};
     store: {};
     derive: {};
     resolve: {};
 }, {
-    typebox: {};
+    type: {};
     error: {};
 }, {
     schema: {};
-    standaloneSchema: {};
     macro: {};
     macroFn: {};
-    parser: {};
 }, {}, {
     derive: {};
     resolve: {};
     schema: {};
-    standaloneSchema: {};
 }, {
     derive: {};
     resolve: {};
     schema: {};
-    standaloneSchema: {};
 }>;
 export {};

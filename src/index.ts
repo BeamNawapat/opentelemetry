@@ -504,7 +504,6 @@ export const opentelemetry = ({
 						body,
 						request,
 						headers: parsedHeaders,
-						// @ts-expect-error
 						response
 					} = context
 
